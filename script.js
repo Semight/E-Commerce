@@ -21,7 +21,7 @@ function getMealList() {
     .then((data) => {
       let html = "";
       if (data.meals) {
-            data.meals.forEach((meal) => {
+            data.meals.forEach(meal => {
             html += `
                     <div class="meal-item" data-id = "${meal.idMeal}">
                         <div class="meal-img">
@@ -57,7 +57,7 @@ function getMealRecipe(e){
 
 //create a modal
 function mealRecipeModal(meal){
-    console.log(meal)
+    console.log(meal);
     meal = meal[0];
     let html = `
                 <h2 class="recipe-title">${meal.strMeal}</h2>
@@ -72,7 +72,7 @@ function mealRecipeModal(meal){
                     </div>
 
                     <div class="recipe-link">
-                        <a href= "${meal.strYoutube}" target="_blank">Watch Video</a>
+                        <a href= "${meal.strYoutube}" target= "_blank">Watch Video</a>
                     </div>
                 `;
                 mealDetailsContent.innerHTML = html;

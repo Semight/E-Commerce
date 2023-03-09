@@ -154,7 +154,7 @@ body .container .meal-wrapper .meal-details .recipe-close-btn {
   font-size: 1.8rem;
   background: #fff;
   border: none;
-  width: 335px;
+  width: 35px;
   height: 35px;
   border-radius: 50%;
   display: flex;
@@ -201,6 +201,9 @@ body .container .meal-wrapper .meal-details .meal-details-content .recipe-link a
 }
 body .container .meal-wrapper .meal-details .meal-details-content .recipe-link a :hover {
   opacity: 0.8;
+}
+body .container .meal-wrapper .showRecipe {
+  display: block;
 }
 body .notFound {
   grid-template-columns: 1fr !important;
